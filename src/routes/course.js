@@ -9,5 +9,7 @@ router.get('/:id/edit', courseController.edit)
 router.put('/:id', courseController.update)
 router.delete('/:id', courseController.delete)
 router.get('/:slug', courseController.show)
+router.patch('/:id/restore', courseController.restore)
+router.delete('/:id/force', courseController.forceDelete)
 
 module.exports = router
